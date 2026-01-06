@@ -17,8 +17,12 @@ function dd($data)
 
 function redirect($url)
 {
-    require $url;
-//    header("Location: " . WEB_ROOT . $url);
-//    exit;
+    require WEB_ROOT . $url;
     die();
+
+    /*
+    // Redirection WEB
+    header("Location: " . WEB_ROOT . $url);
+    exit;
+    */
 }
