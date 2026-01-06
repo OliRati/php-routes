@@ -1,7 +1,8 @@
 <?php
 require 'fonctions.php';
 
-$page = $_GET['page'] ?? 'home';
+$pageFiltre = filter_input(INPUT_GET, 'page' , FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+$page = $pageFiltre ?? 'home';
 
 $routes = [
     'home' => 'home.php',
