@@ -1,6 +1,6 @@
 <?php
-define("PATH_PROJECT", $_SERVER['DOCUMENT_ROOT'] . "/php-routes");
-define("WEB_ROOT", "./php-routes");
+define("PATH_PROJECT", $_SERVER['DOCUMENT_ROOT'] . "");
+define("WEB_ROOT", "");
 
 function dg($data)
 {
